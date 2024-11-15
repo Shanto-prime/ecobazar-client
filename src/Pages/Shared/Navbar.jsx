@@ -4,17 +4,43 @@ const Navbar = () => {
         <>
             <div className="flex mx-auto justify-center">
                 <div className="container flex justify-between py-4">
-                    <p className="text-[#666666] inter text-[13px]">Free shipping on all orders over $50</p>
-                    <div className="text-[#666666] flex flex-row gap-4 inter">
+                    <p className="text-[#666666] poppins text-[13px]">Free shipping on all orders over $50</p>
+                    <div className="text-[#666666] flex flex-row gap-4 poppins">
                         <div className='flex flex-row flex-wrap items-center'>
                             <p>Eng</p>
                             <box-icon name='chevron-down' color="#666666"></box-icon>
                         </div>
-                        <p>Faqs</p>
-                        <div className='flex flex-row flex-wrap items-center gap-1'>
-                            <box-icon name='info-circle' color="#666666" animation='tada'></box-icon>
-                            <p>Need Help</p>
+                        <div className='flex flex-row flex-wrap items-center'>
+                            <p>USD</p>
+                            <box-icon name='chevron-down' color="#666666"></box-icon>
                         </div>
+                        <div className='flex flex-row flex-wrap items-center gap-1'>
+                            <p>Sign In</p>
+                            <box-icon name='minus' animation='spin' ></box-icon>
+                            <p>Sign Up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container flex justify-between py-7 mx-auto">
+                <div className='flex flex-row gap-2 items-center'>
+                    <img src="src\assets\logo.jpeg" alt="" className='w-6' />
+                    <h1 className='poppins text-2xl font-medium text-[#002603]'>Ecobazar</h1>
+                </div>
+                <div>
+                    <label className="input w-[500px] flex items-center justify-between gap-2 pl-5 pr-0">
+                        <box-icon name='search' animation='tada' ></box-icon>
+                        <input type="text" className="w-full" placeholder="Search Here" />
+                        <button className='bg-[#00B307] py-3 px-5 rounded-lg rounded-tl-none rounded-bl-none'>Search</button>
+                    </label>
+                </div>
+                <div className='flex items-center gap-3'>
+                    <box-icon name='heart' ></box-icon>
+                    <hr className='border-[#CCCCCC] border-r-2 h-1/2 ' />
+                    <box-icon name='shopping-bag' ></box-icon>
+                    <div className='poppins'>
+                        <p className='text-xs text-[#4D4D4D]'>shopping cart:</p>
+                        <p className='text-[#1A1A1A] font-medium text-sm'>$57.00</p>
                     </div>
                 </div>
             </div>
