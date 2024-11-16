@@ -44,6 +44,34 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+            <div className="bg-[#333333]">
+                <div className='container flex justify-between py-7 mx-auto'>
+                    <div className='flex flex-row gap-3 items-center text-[#999999]'>
+                        <div className='flex flex-row text-white items-center'>
+                            <h4 className=''>Home</h4>
+                            <box-icon name='chevron-down' color="#fff"></box-icon>
+                        </div>
+                        <div className='flex flex-row text-[#999999] items-center'>
+                            <h4 className=''>Shop</h4>
+                            <box-icon name='chevron-down' color="#999999"></box-icon>
+                        </div>
+                        <div className='flex flex-row text-[#999999] items-center'>
+                            <h4 className=''>Pages</h4>
+                            <box-icon name='chevron-down' color="#999999"></box-icon>
+                        </div>
+                        <div className='flex flex-row text-[#999999] items-center'>
+                            <h4 className=''>Blog</h4>
+                            <box-icon name='chevron-down' color="#999999"></box-icon>
+                        </div>
+                        <div>About Us</div>
+                        <div>Contact Us</div>
+                    </div>
+                    <div className='flex flex-row gap-2 text-white'>
+                        <box-icon name='phone-call' animation='tada' color="white"></box-icon>
+                        <p>(219)555 - 0114</p>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
