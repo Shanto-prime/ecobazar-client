@@ -6,12 +6,15 @@ export default {
   ],
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
   },
   plugins: [
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes: ["light"],
   },
   
 }

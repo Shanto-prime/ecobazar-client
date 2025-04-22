@@ -29,7 +29,7 @@ const Navbar = () => {
                 </div>
                 <div>
                     <label className="input w-[500px] flex items-center justify-between gap-2 pl-5 pr-0">
-                        <box-icon name='search' animation='tada' ></box-icon>
+                        <box-icon name='search' animation='flashing' ></box-icon>
                         <input type="text" className="w-full" placeholder="Search Here" />
                         <button className='bg-[#00B307] py-3 px-5 rounded-lg rounded-tl-none rounded-bl-none'>Search</button>
                     </label>
