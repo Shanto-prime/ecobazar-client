@@ -1,17 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-color: #00B307;
+    --primary-text-color: #1A1A1A;
+    --white-color: #FFFFFF;
+    --gray-color-500: #808080;
+    --gray-color-400: #999999;
+    --offer-color: #FF8A00;
+    --font-default: "Poppins", sans-serif;
+}
+
+* {
+    font-family: var(--font-default);
+    color: var(--primary-text-color);
+}
 .swiper {
-    width: 300px;
-    height: 500px;
+    width: 100%;
+    /* height: 500px; */
   }
   
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #00ffee;
-  
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,3 +36,320 @@
     height: 100%;
     object-fit: cover;
   }
+
+.shopery_container {
+    max-width: 1320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner_main {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -6.25rem;
+}
+
+.banner_left_side {
+    text-align: left;
+    max-width: 44rem;
+    margin-top: 6.25rem;
+    padding-left: 3.5rem;
+}
+
+.banner_right_side {
+    max-width: 51rem;
+    margin-top: 6.25rem;
+}
+
+.banner_subtitle {
+    color: var(--primary-color);
+    font-weight: 500;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+    font-size: .875rem;
+}
+
+.banner_title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.banner_sale {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.75rem;
+
+    & span {
+        font-size: 2rem;
+        color: var(--offer-color);
+        font-weight: 600;
+    }
+}
+
+.banner_description {
+    font-size: 0.875rem;
+    color: var(--gray-color-500);
+    line-height: 1.5;
+    margin-top: .75rem;
+    margin-bottom: 2rem;
+}
+
+.btn_primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_primary:hover {
+    background-color: #009906;
+}
+
+.arrow_right {
+   margin-left: 1rem;
+}
+
+.promo{
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 40px 0px #00260314;
+    padding: 2.5rem;
+    margin-top: -4rem;
+    position: relative;
+    z-index: 10;
+}
+.promo_card{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.promo_img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.promo_img img{
+    height: 100%;
+    width: 100%;
+}
+.promo_title{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+.promo_title p{
+    margin-bottom: .5rem;
+}
+
+.promo_title span{
+    display: block;
+    margin-top: .5rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--gray-color-400);
+}
+
+@media screen and (max-width: 1439.98px) {
+    * {
+        font-size: 11px;
+    }
+
+    .shopery_container {
+        max-width: 1280px;
+    }
+
+    .banner_main {
+        flex-direction: row;
+        margin: 0 -1rem;
+    }
+}
+
+@media screen and (max-width: 1023.98px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 850px;
+    }
+
+    .banner_main {
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    * {
+        font-size: 9px;
+    }
+
+    .shopery_container {
+        max-width: 390px;
+    }
+
+    .banner_main {
+        flex-direction: column;
+    }
+    .promo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    
+}
+
+@media screen and (max-width: 376px) {
+    * {
+        font-size: 8px;
+    }
+
+    .shopery_container {
+        max-width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+    * {
+        font-size: 6px;
+    }
+
+    .shopery_container {
+        max-width: 310px;
+    }
+}
+
+/* error page */
+/* Custom Error Page Styles */
+
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f1fdf4, #e6ffee);
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .error-box {
+    text-align: center;
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideUp 0.8s ease-in-out;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .error-title {
+    font-size: 72px;
+    color: #00B307;
+    margin-bottom: 10px;
+  }
+  
+  .error-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .error-message {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .error-btn {
+    background-color: #00B307;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .error-btn:hover {
+    background-color: #008f05;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .error-box {
+      padding: 30px 20px;
+    }
+  
+    .error-title {
+      font-size: 48px;
+    }
+  
+    .error-subtitle {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .error-box {
+      padding: 25px 15px;
+    }
+  
+    .error-title {
+      font-size: 36px;
+    }
+  
+    .error-subtitle {
+      font-size: 18px;
+    }
+  }
+  
